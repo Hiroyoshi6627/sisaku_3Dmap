@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>避難ルート案内アプリ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/r18/Tween.min.js"></script> <!-- TWEEN.js -->
+</head>
+<body>
+    <div id="app">
+        <!-- 3Dマップエリア -->
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+
+        <!-- チェックポイント1 -->
+        <div class="checkpoint" id="checkpoint-1">
+            <h2 class="checkpoint-title">チェックポイント1: N4-325教室</h2>
+            <img src="N4-325教室前.jpg" alt="N4-325教室前" class="checkpoint-image">
+            <h3 class="route-title">行き方</h3>
+            <img src="経路_1.png" alt="経路 1" class="route-image">
+            <button onclick="goToNextCheckpoint(2)" class="arrival-button">到着</button>
+        </div>
+
+        <!-- チェックポイント2 -->
+        <div class="checkpoint" id="checkpoint-2" style="display: none;">
+            <h2 class="checkpoint-title">チェックポイント2: N4-215教室</h2>
+            <img src="N4-215教室前.jpg" alt="N4-215教室前" class="checkpoint-image">
+            <h3 class="route-title">行き方</h3>
+            <img src="経路_2.png" alt="経路 2" class="route-image">
+            <img src="経路_3.png" alt="経路 3" class="route-image">
+            <button onclick="goToNextCheckpoint(3)" class="arrival-button">到着</button>
+        </div>
+
+        <!-- チェックポイント3 -->
+        <div class="checkpoint" id="checkpoint-3" style="display: none;">
+            <h2 class="checkpoint-title">チェックポイント3: N4-216教室</h2>
+            <img src="N4-216教室前.jpg" alt="N4-216教室前" class="checkpoint-image">
+            <h3 class="route-title">行き方</h3>
+            <img src="経路_4.png" alt="経路 4" class="route-image">
+            <img src="経路_5.png" alt="経路 5" class="route-image">
+            <button onclick="goToNextCheckpoint(4)" class="arrival-button">到着</button>
+        </div>
+
+        <!-- チェックポイント4 -->
+        <div class="checkpoint" id="checkpoint-4" style="display: none;">
+            <h2 class="checkpoint-title">チェックポイント4: 玄関ホール</h2>
+            <img src="玄関ホール.jpg" alt="玄関ホール" class="checkpoint-image">
+            <h3 class="route-title">行き方</h3>
+            <img src="経路_6.png" alt="経路 6" class="route-image">
+            <img src="経路_7.png" alt="経路 7" class="route-image">
+            <img src="経路_8.png" alt="経路 8" class="route-image">
+            <img src="経路_9.png" alt="経路 9" class="route-image">
+            <button onclick="alert('目的地に到着しました！')" class="arrival-button">到着</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

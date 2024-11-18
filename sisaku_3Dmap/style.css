@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+#app {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.checkpoint {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.checkpoint-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.route-title {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.checkpoint-image, .route-image {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* ボタンスタイリング */
+.arrival-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.arrival-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .checkpoint-title, .route-title {
+        font-size: 1.3em;
+    }
+
+    .arrival-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+#app {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* 3Dマップエリアのスタイリング */
+#map-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000; /* 写真と重ならないように */
+}
+
+
+.checkpoint {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.checkpoint-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.route-title {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.checkpoint-image, .route-image {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.arrival-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.arrival-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .checkpoint-title, .route-title {
+        font-size: 1.3em;
+    }
+
+    .arrival-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
